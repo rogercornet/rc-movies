@@ -1,0 +1,24 @@
+@import 'scss/variables';
+
+.moviecard {
+  &__base {
+    position: relative;
+    border: 3px solid $color_black;
+  }
+
+  &__image {
+    pointer-events: none;
+
+  }
+
+  &__caption {
+    background-color: rgba(0,0,0,0.85);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: $font_size_buttontext;
+  }
+}

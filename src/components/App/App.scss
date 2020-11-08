@@ -1,0 +1,71 @@
+@import 'scss/reset';
+@import 'scss/variables';
+
+body {
+  font-size: $font_size_bodytext;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.25;
+}
+i {
+  font-style: italic;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headline {
+  font-size: $font_size_headline;
+
+  &--h1 {
+    font-size: $font_size_pagetitle;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: $spacing_s;
+  padding-right: $spacing_s;
+
+  @media (min-width: $mq_s) {
+    padding-left: $spacing_m;
+    padding-right: $spacing_m;
+  }
+
+  @media (min-width: $mq_xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.button {
+  background-color: $color_blue;
+  font-size: $font_size_buttontext;
+  font-weight: normal;
+  color: $color_white;
+  padding: 0 $spacing_s;
+}
+
+.app {
+  &__main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color_lightgray;
+  }
+}

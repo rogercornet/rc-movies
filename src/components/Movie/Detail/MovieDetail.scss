@@ -1,0 +1,52 @@
+@import 'scss/variables';
+
+.moviedetail {
+  &__base {
+    margin-top: $spacing_l;
+    margin-bottom: $spacing_l;
+    width: 100%
+  }
+
+  &__image {
+    min-width: 300px;
+    min-height: 440px;
+    background-color: $color_lightgray;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color_white;
+    padding: $spacing_m;
+
+    @media (min-width: $mq_s) {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      padding: $spacing_l;
+    }
+  }
+
+  &__info {
+    @media (min-width: $mq_s) {
+      padding-left: $spacing_m;
+    }
+
+    &Block {
+      margin-bottom: $spacing_s;
+    }
+  }
+
+  &__header {
+    margin-bottom: $spacing_l;
+    margin-top: $spacing_m;
+
+    @media (min-width: $mq_s) {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: $spacing_s;
+  }
+}

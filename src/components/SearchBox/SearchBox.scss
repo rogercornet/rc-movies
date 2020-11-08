@@ -1,0 +1,25 @@
+@import 'scss/variables';
+
+.searchbox {
+  &__base {
+    margin: $spacing_s auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 $spacing_m;
+  }
+
+  &__input {
+    border: 1px solid $color_lightgray;
+    height: 50px;
+    width: 100%;
+    max-width: 500px;
+    padding-left: $spacing_s;
+    outline: 0;
+    font-size: $font_size_input;
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $color_blue;
+    }
+  }
+}

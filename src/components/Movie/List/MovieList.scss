@@ -1,0 +1,19 @@
+@import 'scss/variables';
+
+.movielist {
+  &__header {
+    text-align: center;
+    margin: $spacing_m 0 $spacing_l;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: $spacing_xl;
+  }
+
+  &__movie {
+    padding: $spacing_s $spacing_xs;
+  }
+}
